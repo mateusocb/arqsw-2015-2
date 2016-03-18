@@ -24,8 +24,13 @@ public class SSAACFactory {
 		if (facade == null) {
 			facade = new SSAACImp();
 			((SSAACImp) facade).setUserBI(getUserIB());
+			((SSAACImp) facade).setEventBI(getEventBI());
 		}
 		return facade;
+	}
+	
+	public EventBI getEventBI() {
+		return new EventBIImp();
 	}
 	
 	public UserBI getUserIB() {

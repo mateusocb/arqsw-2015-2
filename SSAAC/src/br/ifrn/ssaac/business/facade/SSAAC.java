@@ -4,4 +4,5 @@ import br.ifrn.ssaac.business.model.Student;
 
 public interface SSAAC {
 	public void addStudentAuthor(Student student);
+	public boolean updateEvent(Event event);
 }
